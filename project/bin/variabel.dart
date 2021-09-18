@@ -42,9 +42,17 @@ void main () {
 // var inputToString =  inputInt.toString();
 // print(inputToString);
 
-var inputInt = 1000;
-var inputToDouble =  inputInt.toDouble();
-print(inputToDouble);
+// var inputInt = 1000;
+// var inputToDouble =  inputInt.toDouble();
+// print(inputToDouble);
+
+dynamic inputText = '1000';
+late var toIntYa = inputText as int;
+ // print(toIntYa); (ERROR)
+var isInt = inputText is int;
+// print(isInt); (FALSE)
+var isntInt = inputText is int;
+// print(isntInt); (TRUE)
 }
 // String getName() {
 //   print('getName  dipanggil');

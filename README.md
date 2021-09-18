@@ -196,6 +196,31 @@ print(inputToDouble);
 | a = a ~/ 1  | a~/ = 1  |
 | a = a % 1  | a%=1  |
 
+# Operator Logika
+| Operator | Deskripsi |
+| ------------ | ------------ |
+| &&  | dan |
+|   |  atau|
+| !  | Tidak Sama |
+
+# Operator Type Test
+- Operator yang digunakan untuk melakukan pengecekan suatu tipe data
+| Operator | Deskripsi |
+| ------------ | ------------ |
+| as  | mengkonversi tipedata secara pakse |
+| is | pengecekan tipedata apakah sama (hasil boolean) |
+| is!  | pengecekan tipedata apakah tidak sama (hasil boolean) |
+- Contoh
+```dart
+dynamic inputText = '1000';
+late var toIntYa = inputText as int;
+ // print(toIntYa); (ERROR)
+var isInt = inputText is int;
+// print(isInt); (FALSE)
+var isntInt = inputText is int;
+// print(isntInt); (TRUE)
+```
+
 
 
 
