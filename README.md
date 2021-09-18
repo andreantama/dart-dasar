@@ -205,6 +205,7 @@ print(inputToDouble);
 
 # Operator Type Test
 - Operator yang digunakan untuk melakukan pengecekan suatu tipe data
+
 | Operator | Deskripsi |
 | ------------ | ------------ |
 | as  | mengkonversi tipedata secara pakse |
