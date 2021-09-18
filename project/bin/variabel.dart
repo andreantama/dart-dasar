@@ -24,11 +24,29 @@ void main () {
 
   // print(firstName);
   // print(lastName);
-  late var name = getName();
-  print('name dideklarasikan');
-  print(name);
+  // late var name = getName();
+  // print('name dideklarasikan');
+  // print(name);
+
+  // String firstName = 'Andrean';
+  // String lastName = 'Yogatama';
+
+  // var myName = 'My Name is ${firstName} ${lastName} you can call me \'Yoga\' and i have \$100';
+  // print(myName);
+
+//  var inputString = '1000';
+//  var inputToInt =  int.parse(inputString);
+//  print(inputToInt);
+
+// var inputInt = 1000;
+// var inputToString =  inputInt.toString();
+// print(inputToString);
+
+var inputInt = 1000;
+var inputToDouble =  inputInt.toDouble();
+print(inputToDouble);
 }
-String getName() {
-  print('getName  dipanggil');
-  return 'Andrean Yogatama';
-}
+// String getName() {
+//   print('getName  dipanggil');
+//   return 'Andrean Yogatama';
+// }

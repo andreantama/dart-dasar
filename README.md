@@ -102,4 +102,79 @@ name dideklarasikan
 getName  dipanggil
 Andrean Yogatama
 ```
+## Komentar
+- Komentar digunakan untuk dokumentasi, keterangan code, ignore line of code.
+```dart
+// print(lastName);
+/// Untuk Dokumentasi
+```
+
+## Tipe Data Number
+- Jika ingin angka bulat maka tipe datanya **int**
+- Jika ingin angka pecahan makan tipe datanya **double**
+
+## Tipe Data NUM
+-  Jika ingin varibel angka tersebut ingin tipedata angka yang bisa diisi **int** atau **double**
+
+## Tipe Data Boolean
+- Tipe data yg hanya berisi 2 jenis value **true** atau **false**
+
+## Tipe data String
+- Tipe data text / tulisan
+- Bisa menggunakan petik satu atau petik dua valuenya
+
+## String Interpolation
+- Suatu variabel mengambil data String dari variabel lain.
+- Contoh : 
+```dart
+ String firstName = 'Andrean';
+ String lastName = 'Yogatama';
+
+  var myName = 'My Name is ${firstName} ${lastName} you can call me \'Yoga\' and i have \$100';
+  print(myName);
+```
+## Menggabungkan Antar String
+- Bisa dipisahkan dengan **spasi** atau **+**
+## Multiline String
+- Bisa diapit petik satu atau petik dua SEBANNYAK 3x
+## Tipe Data Dynamic
+- Tipedata yang bisa bisa diisi tipe data apapun baik dari string lalu diisi number atau dari number diisi string 
+```dart
+ dynamic name = 'Andrean Yogatama';
+ name = 43;
+ print(name);
+```
+## Konversi Tipe Data
+- toString() konversi dari number ke string
+```dart
+var inputInt = 1000;
+var inputToString =  inputInt.toString();
+print(inputToString);
+```
+- parse() konversi dari string ke number
+```dart
+ var inputString = '1000';
+ var inputToInt =  int.parse(inputString);
+ print(inputToInt);
+```
+- toInt() konversi dari double ke int
+- toDouble konversi dari int ke double
+```dart
+var inputInt = 1000;
+var inputToDouble =  inputInt.toDouble();
+print(inputToDouble);
+```
+
+# Operator Aritmatika
+| Operator  | Deskripsi  |
+| ------------ | ------------ |
+| +  | Penjumlahan   |
+| -  | Pengurangan   |
+| -varibale  | minus varible   |
+| *  | Perkalian   |
+| /  | Pembagian Hasil Double   |
+| ~/  | Pembagian Hasil Int  |
+| % | Sisa Hasil Bagi   |
+
+
 
