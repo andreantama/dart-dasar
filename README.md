@@ -176,5 +176,16 @@ print(inputToDouble);
 | ~/  | Pembagian Hasil Int  |
 | % | Sisa Hasil Bagi   |
 
+# Operator Perbandingan
+| Operator  | Deskripsi   |
+| ------------ | ------------ |
+| ==   | Apakah Samadengan  |
+| !=   | Apakah Tidak Samadengan   |
+| >  | Apakah Lebih dari   |
+| <  | Apakah Kurang Dari   |
+| >=  | Apakah Lebih Dari atau Samadengan  |
+| <=  | Apakah Kurang Dari atau Sama Dengan   |
+
+
 
 
