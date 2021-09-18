@@ -186,6 +186,16 @@ print(inputToDouble);
 | >=  | Apakah Lebih Dari atau Samadengan  |
 | <=  | Apakah Kurang Dari atau Sama Dengan   |
 
+# Operator Penugasan
+| Operator Aritmatika | Operator Penugasaan   |
+| ------------ | ------------ |
+| a = a + 1  | a+=1  |
+| a = a - 1  | a-=1  |
+| a = a * 1  | a\*=1  |
+| a = a / 1  | a/=1  |
+| a = a ~/ 1  | a~/ = 1  |
+| a = a % 1  | a%=1  |
+
 
 
 
