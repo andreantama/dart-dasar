@@ -218,7 +218,7 @@ late var toIntYa = inputText as int;
  // print(toIntYa); (ERROR)
 var isInt = inputText is int;
 // print(isInt); (FALSE)
-var isntInt = inputText is int;
+var isntInt = inputText is! int;
 // print(isntInt); (TRUE)
 ```
 
