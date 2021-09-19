@@ -221,6 +221,48 @@ var isInt = inputText is int;
 var isntInt = inputText is! int;
 // print(isntInt); (TRUE)
 ```
+# List atau Array
+- Varible yang berisikan kumpulan data
+- HARUS MENENTUKAN tipe data apa
+- List *Tipedata* *namaVariable* = []
+- List sendiri memiliki property, method atau operator
+
+```dart
+List<String> namaHewan = ['Dog', 'Cat'];
+var umurHewam = <int>[20, 30];
+var uangKu = <double>[20.3, 20];
+//dynamic
+var apapun = ['anam', 12];
+```
+## Menambahkan data ke List
+```dart
+var names = <String>[];
+names.add('Eko');
+
+```
+## Manipulasi data di List
+| Operator | Deskripsi |
+| ------------ | ------------ |
+|list.add(value)  | menambahkan value diakhir |
+|list[index]  | mengakses data list di index |
+|list[index] = value  | mengubah data di index tertentu |
+|list.removeAt(value)  | menghabus list di index tertentu |
+|list.length  | menghitung jumlah index |
+Docs :[ https://api.dart.dev/stable/2.3.1/dart-core/List-class.html](http://https://api.dart.dev/stable/2.3.1/dart-core/List-class.html " https://api.dart.dev/stable/2.3.1/dart-core/List-class.html")
+
+# Set
+-  Sama dengan list carakerjanya cuman di set tidak menerima duplikat data
+- Set tidak menjamin urutan data
+- Set tidak memilik index seperti List
+```dart
+Set<String> kota = {};
+var nama = <String>{};
+```
+## Manipulasi yang ada di Set
+| Operator | Deskripsi |
+| ------------ | ------------ |
+|set.add(value)  | menambahkan value |
+|set.remove(value)  | menghapus value |
 
 
 
