@@ -66,12 +66,15 @@ void main () {
 // name.removeAt(1);
 // print(name[1]);
 
-var nama = <String>{};
-nama.add('Yoga');
-nama.add('Yoga');
-nama.remove('Yoga');
-print(nama);
-
+// Map<String, dynamic> biodata = {};
+// biodata['nama'] = {
+//   'firstName' : 'Andrean',
+//   'lastName': 'Yogatama',
+// };
+// // Map<String, dynamic> name = biodata['nama'];
+// // name.remove('firstName');
+// biodata['nama']['middleName'] = 'asas';
+// print(biodata['nama']);
 }
 // String getName() {
 //   print('getName  dipanggil');

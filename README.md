@@ -7,6 +7,8 @@ Contoh :  hello_world.dart
 - Didart semua baris code diakhiri ; (Titik Koma)
 - Dalam membuat kode program kode dart selalu ada **main function**
 Contoh : 
+
+
 ```dart
 void main() {
   print('Hello world!');
@@ -14,12 +16,15 @@ void main() {
 ```
 - Untuk menjalankan file dart bisa menuggunakan perintah dart -lokasi file nya
 Contoh : 
+
 ```bash
 dart run hello_world.dart
 ```
 # Variabel
 - Varibale di dart WAJIB memiliki tipe data
 - Penamaan variable di dart itu menggunakan cara **Camel Case** "firstName" "lastName"
+
+
 ```dart
 void main () {
   String firstName = 'Andrean';
@@ -31,24 +36,28 @@ void main () {
 ```
 ## Kata Kunci Var
 - Jika variabel menggunakan kata kunci Var maka otomatis dart akan menentukan TIPEDATA nya tergantung dari NILAINYA, jadi setelah menggunakan Var tidak perlu deklarasi kembali tipe datanya.
+
 ```dart
  var age = 25;
   print(age);
 ```
 ## Kata Kunci Final
 - (Final vs Const = Array) Jika variabel menggunakan kata kunci Final maka variable tersebut hanya dapat DIDEKLARASIKAN 1x dan tidak dapat dideklarasikan ulang tetapi value nya masih bisa di ubah;
+
 ```dart
 final nik = 35735735737;
   print(nik);
 ```
 ## Kata Kunci Const
 - (Final vs Const = Array) Jika variabel menggunakan kata kunci Const maka variabel terbesut bersifat IMMUTABEL (ridak bisa diubah sama sekali)
+
 ```dart
   const nik = 35735735737;
   print(nik);
 ```
 ## Final vs Const
 Contoh penggunakan final di data array : 
+
 ```dart
 final array1 = [1, 2, 3];
 //Final tidak boleh dideklarasikan ulang seperti dibawah (ERROR)
@@ -57,6 +66,7 @@ array1 = [3, 2, 1;
 array1[0] = 5;
 ```
 Contoh penggunakan const di data array : 
+
 ```dart
 const array1 = [1, 2, 3];
 //Const tidak boleh dideklarasikan ulang seperti dibawah (ERROR)
@@ -67,6 +77,7 @@ array1[0] = 5;
 ## Kata Kunci Late
 Variable yang menggunakankata kunci late maka variabel tersebut akan DIDEKLARASIKAN apabila DIAKSES, tidak seperti varibel lainnya yg SELALU DIDEKLARASIKAN diawal : 
 Contoh variabel tanpa kata kunci late : 
+
 ```dart
 void main () {
   var name = getName();
@@ -79,12 +90,14 @@ String getName() {
 }
 ```
 Outputnya : 
+
 ```bash
 getName  dipanggil
 name dideklarasikan
 Andrean Yogatama
 ```
 Contoh variabel menggunakan kata kunci late : 
+
 ```dart
 void main () {
   late var name = getName();
@@ -97,6 +110,7 @@ String getName() {
 }
 ```
 Outputnya : 
+
 ```bash
 name dideklarasikan
 getName  dipanggil
@@ -104,6 +118,7 @@ Andrean Yogatama
 ```
 ## Komentar
 - Komentar digunakan untuk dokumentasi, keterangan code, ignore line of code.
+
 ```dart
 // print(lastName);
 /// Untuk Dokumentasi
@@ -126,6 +141,7 @@ Andrean Yogatama
 ## String Interpolation
 - Suatu variabel mengambil data String dari variabel lain.
 - Contoh : 
+
 ```dart
  String firstName = 'Andrean';
  String lastName = 'Yogatama';
@@ -139,6 +155,7 @@ Andrean Yogatama
 - Bisa diapit petik satu atau petik dua SEBANNYAK 3x
 ## Tipe Data Dynamic
 - Tipedata yang bisa bisa diisi tipe data apapun baik dari string lalu diisi number atau dari number diisi string 
+
 ```dart
  dynamic name = 'Andrean Yogatama';
  name = 43;
@@ -146,12 +163,14 @@ Andrean Yogatama
 ```
 ## Konversi Tipe Data
 - toString() konversi dari number ke string
+
 ```dart
 var inputInt = 1000;
 var inputToString =  inputInt.toString();
 print(inputToString);
 ```
 - parse() konversi dari string ke number
+
 ```dart
  var inputString = '1000';
  var inputToInt =  int.parse(inputString);
@@ -159,6 +178,7 @@ print(inputToString);
 ```
 - toInt() konversi dari double ke int
 - toDouble konversi dari int ke double
+
 ```dart
 var inputInt = 1000;
 var inputToDouble =  inputInt.toDouble();
@@ -212,6 +232,7 @@ print(inputToDouble);
 | is | pengecekan tipedata apakah sama (hasil boolean) |
 | is!  | pengecekan tipedata apakah tidak sama (hasil boolean) |
 - Contoh
+
 ```dart
 dynamic inputText = '1000';
 late var toIntYa = inputText as int;
@@ -227,6 +248,7 @@ var isntInt = inputText is! int;
 - List *Tipedata* *namaVariable* = []
 - List sendiri memiliki property, method atau operator
 
+
 ```dart
 List<String> namaHewan = ['Dog', 'Cat'];
 var umurHewam = <int>[20, 30];
@@ -235,6 +257,7 @@ var uangKu = <double>[20.3, 20];
 var apapun = ['anam', 12];
 ```
 ## Menambahkan data ke List
+
 ```dart
 var names = <String>[];
 names.add('Eko');
@@ -254,6 +277,7 @@ Docs :[ https://api.dart.dev/stable/2.3.1/dart-core/List-class.html](http://http
 -  Sama dengan list carakerjanya cuman di set tidak menerima duplikat data
 - Set tidak menjamin urutan data
 - Set tidak memilik index seperti List
+
 ```dart
 Set<String> kota = {};
 var nama = <String>{};
@@ -263,6 +287,32 @@ var nama = <String>{};
 | ------------ | ------------ |
 |set.add(value)  | menambahkan value |
 |set.remove(value)  | menghapus value |
+
+# Map
+- Map hampir sama seperti List tetapi index nya tidak otomatis seperti List
+- Di Map kita bisa menentukan sendiri Tipe Data dari Key / index nya
+- Jika memasukan data di key / index yg sudah ada, maka value nya auto diperbarui
+
+```dart
+Map<String, dynamic> biodata = {
+  'name': {
+    'firstName': 'Andrean',
+    'lastName': 'Yogatama',
+  }
+};
+var biodata = <String, dynamic>{
+  'name': {
+    'firstName': 'Andrean',
+    'lastName': 'Yogatama',
+  }
+};
+```
+## Manipulasi Map
+| Operator | Deskripsi |
+| ------------ | ------------ |
+| map[key]  | mendapatkan data |
+| map[key] = value  | menambahkan data |
+| map.remove(key) | menghapus data |
 
 
 
