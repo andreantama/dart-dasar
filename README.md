@@ -34,28 +34,28 @@ void main () {
   print(lastName);
 }
 ```
-## Kata Kunci Var
+### Kata Kunci Var
 - Jika variabel menggunakan kata kunci Var maka otomatis dart akan menentukan TIPEDATA nya tergantung dari NILAINYA, jadi setelah menggunakan Var tidak perlu deklarasi kembali tipe datanya.
 
 ```dart
  var age = 25;
   print(age);
 ```
-## Kata Kunci Final
+### Kata Kunci Final
 - (Final vs Const = Array) Jika variabel menggunakan kata kunci Final maka variable tersebut hanya dapat DIDEKLARASIKAN 1x dan tidak dapat dideklarasikan ulang tetapi value nya masih bisa di ubah;
 
 ```dart
 final nik = 35735735737;
   print(nik);
 ```
-## Kata Kunci Const
+### Kata Kunci Const
 - (Final vs Const = Array) Jika variabel menggunakan kata kunci Const maka variabel terbesut bersifat IMMUTABEL (ridak bisa diubah sama sekali)
 
 ```dart
   const nik = 35735735737;
   print(nik);
 ```
-## Final vs Const
+### Final vs Const
 Contoh penggunakan final di data array : 
 
 ```dart
@@ -74,7 +74,7 @@ array1 = [3, 2, 1;
 // Const valuenya tidak bisa diganti seperti dibawah (ERROR)
 array1[0] = 5;
 ```
-## Kata Kunci Late
+### Kata Kunci Late
 Variable yang menggunakankata kunci late maka variabel tersebut akan DIDEKLARASIKAN apabila DIAKSES, tidak seperti varibel lainnya yg SELALU DIDEKLARASIKAN diawal : 
 Contoh variabel tanpa kata kunci late : 
 
@@ -116,7 +116,7 @@ name dideklarasikan
 getName  dipanggil
 Andrean Yogatama
 ```
-## Komentar
+### Komentar
 - Komentar digunakan untuk dokumentasi, keterangan code, ignore line of code.
 
 ```dart
@@ -124,21 +124,21 @@ Andrean Yogatama
 /// Untuk Dokumentasi
 ```
 
-## Tipe Data Number
+### Tipe Data Number
 - Jika ingin angka bulat maka tipe datanya **int**
 - Jika ingin angka pecahan makan tipe datanya **double**
 
-## Tipe Data NUM
+### Tipe Data NUM
 -  Jika ingin varibel angka tersebut ingin tipedata angka yang bisa diisi **int** atau **double**
 
-## Tipe Data Boolean
+### Tipe Data Boolean
 - Tipe data yg hanya berisi 2 jenis value **true** atau **false**
 
-## Tipe data String
+### Tipe data String
 - Tipe data text / tulisan
 - Bisa menggunakan petik satu atau petik dua valuenya
 
-## String Interpolation
+### String Interpolation
 - Suatu variabel mengambil data String dari variabel lain.
 - Contoh : 
 
@@ -149,11 +149,11 @@ Andrean Yogatama
   var myName = 'My Name is ${firstName} ${lastName} you can call me \'Yoga\' and i have \$100';
   print(myName);
 ```
-## Menggabungkan Antar String
+### Menggabungkan Antar String
 - Bisa dipisahkan dengan **spasi** atau **+**
-## Multiline String
+### Multiline String
 - Bisa diapit petik satu atau petik dua SEBANNYAK 3x
-## Tipe Data Dynamic
+### Tipe Data Dynamic
 - Tipedata yang bisa bisa diisi tipe data apapun baik dari string lalu diisi number atau dari number diisi string 
 
 ```dart
@@ -161,7 +161,7 @@ Andrean Yogatama
  name = 43;
  print(name);
 ```
-## Konversi Tipe Data
+### Konversi Tipe Data
 - toString() konversi dari number ke string
 
 ```dart
@@ -256,14 +256,14 @@ var uangKu = <double>[20.3, 20];
 //dynamic
 var apapun = ['anam', 12];
 ```
-## Menambahkan data ke List
+### Menambahkan data ke List
 
 ```dart
 var names = <String>[];
 names.add('Eko');
 
 ```
-## Manipulasi data di List
+### Manipulasi data di List
 | Operator | Deskripsi |
 | ------------ | ------------ |
 |list.add(value)  | menambahkan value diakhir |
@@ -282,7 +282,7 @@ Docs :[ https://api.dart.dev/stable/2.3.1/dart-core/List-class.html](http://http
 Set<String> kota = {};
 var nama = <String>{};
 ```
-## Manipulasi yang ada di Set
+### Manipulasi yang ada di Set
 | Operator | Deskripsi |
 | ------------ | ------------ |
 |set.add(value)  | menambahkan value |
@@ -307,7 +307,7 @@ var biodata = <String, dynamic>{
   }
 };
 ```
-## Manipulasi Map
+### Manipulasi Map
 | Operator | Deskripsi |
 | ------------ | ------------ |
 | map[key]  | mendapatkan data |
