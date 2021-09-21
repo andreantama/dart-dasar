@@ -75,6 +75,14 @@ void main () {
 // // name.remove('firstName');
 // biodata['nama']['middleName'] = 'asas';
 // print(biodata['nama']);
+ myName(nik:121);
+
+}
+
+void myName({String? firstName, String lastName = 'Tono', required int nik}) {
+  print(nik);
+  print(lastName);
+  print(firstName);
 }
 // String getName() {
 //   print('getName  dipanggil');

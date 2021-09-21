@@ -314,6 +314,101 @@ var biodata = <String, dynamic>{
 | map[key] = value  | menambahkan data |
 | map.remove(key) | menghapus data |
 
+# Tipe Data Null
+- Di dart tidak bisa mendeklarasikan suatu varibel yg bernilai null.
+- Apabila ingin menset suatu variabel dengan nilai null, makan harus ditambahkan ? setelah tipe data
+```dart
+String? nama = null;   
+```
 
+# Ternary Operator
+```dart
+var nilai = 10;
+var hasil =  (nilai >= 10) ? 'Lebih dari sepuluh' : 'Kurang dari sepuluh';
+print(hasil);
+```
+# Null Safety
+-  Error NullPointerException adalah jika kita mengkases data/variable yang mana value NULL.
+-  Cara mengatasinya dapa tmelakukan pengecekan dulu.
+- Untuk NUll member juga diberi ? di tipe data dan variable parent nya
+
+# Function
+- Function / Method
+- Function dengan value null / print diawali dengan void
+- Function dengan return tipe data diawali dengan Tipedata
+- Function bisa diperpendek tanpa diapit kurung kurawal
+
+Contoh Function Menggunakan void
+```dart
+void myName() {
+  print('Andrean Yogatama');
+}
+void main() {
+  myName()
+}
+```
+
+Contoh Function Menggunakan Tipedata
+```dart
+String myName() {
+  return 'Andrean Yogatama';
+}
+void main() {
+  myName()
+}
+```
+
+Contoh Function Pendek
+```dart
+void myName() => print('Andrean Yogatama');
+void main() {
+  myName()
+}
+```
+
+Contoh Inner Funtion
+- inner function hanya dapat diakses di parent function
+```dart
+void myName() {
+  void firstName() {
+    
+  }
+}
+```
+### Paramter Function
+
+Contoh startdart parameter di function
+```dart
+void myName(String firstName, String lastName) 
+```
+Contoh OPTIONAL paramter
+- optional parameter bersifat nullable
+```dart
+void myName([String? firstName, String? lastName]) 
+```
+
+Contoh OPTIONAL paramter with default value
+- optional parameter bersifat nullable
+```dart
+void myName([String? firstName = Toni, String lastName = 'Tono']) 
+```
+Contoh NAMED paramter
+- Dapat diisi tanpa harus urut.
+- Dipanggil harus dengan nama functionnya
+- Paramternya berisfat NULABLE
+
+```dart
+void myName({String? firstName, String? lastName}) 
+```
+Contoh NAMED paramter dengan DEFAULT value
+```dart
+void myName({String? firstName, String lastName = 'Tono'}) 
+```
+
+Contoh Mendatory Named Paremter
+- ditambah required sebelum tipedata
+```dart
+void myName({String? firstName, String lastName = 'Tono', required int nik})
+```
 
 
