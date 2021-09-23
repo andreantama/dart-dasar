@@ -410,5 +410,29 @@ Contoh Mendatory Named Paremter
 ```dart
 void myName({String? firstName, String lastName = 'Tono', required int nik})
 ```
+### High Order Function
+- Function di dart berupa object yang dapat sebagai parameter dari function lainnya
+- String ada return dari valuenya (String) adalah tipedata parameternya
+```dart
+void main() {
+  myName(validasiName, 'gila', 'Yogatama');
+}
+String validasiName(String name) {
+  if (name != 'gila') {
+    return name;
+  }
+  return '****';
+}
+
+void myName(
+  String Function(String) validasi, String firstName, String lastName) {
+  String validasiFirstName = validasi(firstName);
+  String validasiLastName = validasi(lastName);
+
+  print(validasiFirstName);
+  print(validasiLastName);
+}
+```
+
 
 

@@ -1,4 +1,4 @@
-void main () {
+void main() {
   // String firstName = 'Andrean';
   // String lastName;
   // lastName = 'Yogatama';
@@ -11,7 +11,7 @@ void main () {
   //array1 = [3, 2, 1;
   // Final valuenya masih bisa di ganti seperti dibawah
   //array1[0] = 5;
-  
+
   // const array1 = [1, 2, 3];
   //Const tidak boleh dideklarasikan ulang seperti dibawah (ERROR)
   //array1 = [3, 2, 1;
@@ -20,7 +20,6 @@ void main () {
   // print(nik);
 
   // print(age);
-  
 
   // print(firstName);
   // print(lastName);
@@ -75,14 +74,23 @@ void main () {
 // // name.remove('firstName');
 // biodata['nama']['middleName'] = 'asas';
 // print(biodata['nama']);
- myName(nik:121);
-
+  myName(validasiName, 'gila', 'Yogatama');
 }
 
-void myName({String? firstName, String lastName = 'Tono', required int nik}) {
-  print(nik);
-  print(lastName);
-  print(firstName);
+String validasiName(String name) {
+  if (name != 'gila') {
+    return name;
+  }
+  return '****';
+}
+
+void myName(
+    String Function(String) validasi, String firstName, String lastName) {
+  String validasiFirstName = validasi(firstName);
+  String validasiLastName = validasi(lastName);
+
+  print(validasiFirstName);
+  print(validasiLastName);
 }
 // String getName() {
 //   print('getName  dipanggil');
