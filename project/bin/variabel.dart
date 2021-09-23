@@ -74,24 +74,42 @@ void main() {
 // // name.remove('firstName');
 // biodata['nama']['middleName'] = 'asas';
 // print(biodata['nama']);
-  myName(validasiName, 'gila', 'Yogatama');
+  //myName(validasiName, 'gila', 'Yogatama');
+  var firstName = (String name) {
+    if (name != 'gila') {
+      return name;
+    }
+    return '****';
+  };
+  var lastName = (String name) {
+    if (name != 'gila') {
+      return name;
+    }
+    return '****';
+  };
+  myName(firstName('Andrean'), lastName('gila'));
 }
 
-String validasiName(String name) {
-  if (name != 'gila') {
-    return name;
-  }
-  return '****';
+void myName(String firstName, String lastName) {
+  print(firstName);
+  print(lastName);
 }
 
-void myName(
-    String Function(String) validasi, String firstName, String lastName) {
-  String validasiFirstName = validasi(firstName);
-  String validasiLastName = validasi(lastName);
+// String validasiName(String name) {
+//   if (name != 'gila') {
+//     return name;
+//   }
+//   return '****';
+// }
 
-  print(validasiFirstName);
-  print(validasiLastName);
-}
+// void myName(
+//     String Function(String) validasi, String firstName, String lastName) {
+//   String validasiFirstName = validasi(firstName);
+//   String validasiLastName = validasi(lastName);
+
+//   print(validasiFirstName);
+//   print(validasiLastName);
+// }
 // String getName() {
 //   print('getName  dipanggil');
 //   return 'Andrean Yogatama';

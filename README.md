@@ -434,5 +434,29 @@ void myName(
 }
 ```
 
+### Anonymous Function
+- Sebuah funcation yang tanpa harus menunjukan nama functionnya
+```dart
+void main() {
+  var firstName = (String name) {
+    if (name != 'gila') {
+      return name;
+    }
+    return '****';
+  };
+  var lastName = (String name) {
+    if (name != 'gila') {
+      return name;
+    }
+    return '****';
+  };
+  myName(firstName('Andrean'), lastName('gila'));
+}
+void myName(String firstName, String lastName) {
+  print(firstName);
+  print(lastName);
+}
+```
+
 
 
