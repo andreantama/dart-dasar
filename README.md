@@ -1,6 +1,37 @@
-> Author  : Andrean Yogatama (andreanyogatama1@gmail.com)
-created_at : 18 - 9 - 2021
-updated_at : 18 - 9 - 2021
+[Variabel](https://github.com/andreantama/dart-dasar#variabelhttp:// "Variabel")
+- [Kata Kunci Var](http://https://github.com/andreantama/dart-dasar#kata-kunci-var "Kata Kunci Var")
+- [Kata Kunci Final](https://github.com/andreantama/dart-dasar#kata-kunci-final "Kata Kunci Final")
+- [Kata Kunci Const](https://github.com/andreantama/dart-dasar#kata-kunci-const "Kata Kunci Const")
+- [Final vs Const](https://github.com/andreantama/dart-dasar#final-vs-const "Final vs Const")
+- [Kata Kunci Late](https://github.com/andreantama/dart-dasar#kata-kunci-late "Kata Kunci Late")
+- [Komentar](https://github.com/andreantama/dart-dasar#komentar "Komentar")
+- [Tipe Data Number](https://github.com/andreantama/dart-dasar#tipe-data-number "Tipe Data Number")
+- [Tipe Data NUM](https://github.com/andreantama/dart-dasar#tipe-data-num "Tipe Data NUM")
+- [Tipe Data Boolean](https://github.com/andreantama/dart-dasar#tipe-data-boolean "Tipe Data Boolean")
+- [Tipe Data String](https://github.com/andreantama/dart-dasar#tipe-data-string "Tipe Data String")
+- [String Interpolation](https://github.com/andreantama/dart-dasar#string-interpolation "String Interpolation")
+- [Menggabungkan Antar String](https://github.com/andreantama/dart-dasar#menggabungkan-antar-string "Menggabungkan Antar String")
+- [Multiline String](https://github.com/andreantama/dart-dasar#multiline-string "Multiline String")
+- [Tipe Data Dynamic](https://github.com/andreantama/dart-dasar#tipe-data-dynamic "Tipe Data Dynamic")
+- [Konversi Tipe Data](https://github.com/andreantama/dart-dasar#konversi-tipe-data "Konversi Tipe Data")
+
+[Operator Aritmatika](https://github.com/andreantama/dart-dasar#operator-aritmatika "Operator Aritmatika")
+
+[Operator Perbandingan](https://github.com/andreantama/dart-dasar#operator-perbandingan "Operator Perbandingan")
+
+[Operator Penugasaan](https://github.com/andreantama/dart-dasar#operator-penugasan "Operator Penugasaan")
+
+[Operator Logika](https://github.com/andreantama/dart-dasar#operator-logika "Operator Logika")
+
+[Operator Type Test](https://github.com/andreantama/dart-dasar#operator-type-test "Operator Type Test")
+
+[List atau Array](https://github.com/andreantama/dart-dasar#list-atau-array "List atau Array")
+- [Menambahkan data ke List](https://github.com/andreantama/dart-dasar#menambahkan-data-ke-list "Menambahkan data ke List")
+- [Manipulasi data di List](https://github.com/andreantama/dart-dasar#manipulasi-data-di-list "Manipulasi data di List")
+
+[Set](https://github.com/andreantama/dart-dasar#set "Set")
+
+[Map](https://github.com/andreantama/dart-dasar#map "Map")
 
 - Best practice developer dart, dalam membuat file dart terdiri dari huruf kecil dan dipisahkan dengan underscrore.
 Contoh :  hello_world.dart
